@@ -4,7 +4,7 @@ import {
   ChevronFirst
 } from "lucide-react";
 import { createContext, useState, useContext, ReactNode } from "react";
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.png';
 
 type SidebarContextType = {
   expanded: boolean;
@@ -31,7 +31,7 @@ export default function Sidebar({ children }: SidebarProps) {
           <button
             onClick={() => setExpanded((curr) => !curr)}
             className={`${expanded ? "w-20 h-10" : "w-10 h-10"}
-    flex items-center justify-center rounded-md !bg-red-200 text-red-800 hover:!bg-red-300 focus:outline-none focus:ring-0 transition-all duration-200`}
+      flex items-center justify-center rounded-md !bg-blue-300 text-blue-800 hover:!bg-blue-400 focus:outline-none focus:ring-0 transition-all duration-200`}
           >
             {expanded ? <ChevronFirst size={24} /> : <ChevronLast size={28} />}
           </button>

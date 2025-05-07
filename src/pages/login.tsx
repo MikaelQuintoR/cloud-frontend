@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.png';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -51,11 +51,11 @@ export default function Login() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="celsito@celsa.com.pe"
+            placeholder="medigo@gmail.com"
             required
             style={{
               width: '100%',
-              height: '20px',
+              height: '30px',
               backgroundColor: 'white',
               border: '1px solid #ccc',
               borderRadius: '10px',
@@ -76,7 +76,7 @@ export default function Login() {
             required
             style={{
               width: '100%',
-              height: '20px',
+              height: '30px',
               backgroundColor: 'white',
               border: '1px solid #ccc',
               borderRadius: '10px',
@@ -91,7 +91,7 @@ export default function Login() {
           style={{
             marginTop: '1.5rem',
             width: '100%',
-            backgroundColor: '#f73317',
+            backgroundColor: '#3364ff',
             color: 'white',
           }}
         >

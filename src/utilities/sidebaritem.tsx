@@ -24,8 +24,8 @@ export function SidebarItem({ icon, text, active = false, alert = false, onClick
         focus:outline-none focus:ring-0
         ${
           active
-            ? "bg-red-200 text-red-800"
-            : "hover:bg-red-300 text-gray-600"
+            ? "bg-blue-300 text-blue-800"
+            : "hover:bg-blue-300 text-gray-600"
         }
       `}
     >
@@ -39,7 +39,7 @@ export function SidebarItem({ icon, text, active = false, alert = false, onClick
       </span>
       {alert && (
         <div
-          className={`absolute right-2 w-2 h-2 rounded bg-red-500 ${
+          className={`absolute right-2 w-2 h-2 rounded bg-blue-500 ${
             expanded ? "" : "top-2"
           }`}
         />
@@ -49,7 +49,7 @@ export function SidebarItem({ icon, text, active = false, alert = false, onClick
         <div
           className={`
             absolute left-full rounded-md px-2 py-1 ml-6
-            bg-red-200 text-red-800 text-sm
+            bg-blue-300 text-blue-800 text-sm
             invisible opacity-20 -translate-x-3 transition-all
             group-hover:visible group-hover:opacity-100 group-hover:translate-x-0
           `}
