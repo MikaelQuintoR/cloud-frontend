@@ -8,7 +8,7 @@ export default function MainPage() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    navigate('/'); // Redirige al login al hacer clic en "Cerrar sesión"
+    navigate('/'); 
   };
 
   return (

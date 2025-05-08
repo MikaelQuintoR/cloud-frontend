@@ -97,11 +97,11 @@ export default function Register() {
       textAlign: 'center' as const,
     },
     loginText: {
-      fontSize: '0.875rem', // Tamaño reducido
+      fontSize: '0.875rem', 
       color: 'black',
     },
     loginLink: {
-      fontSize: '0.875rem', // Tamaño reducido
+      fontSize: '0.875rem',
       color: '#3f6cfd',
       textDecoration: 'underline',
       cursor: 'pointer',
