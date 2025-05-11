@@ -18,12 +18,12 @@ export const buscarExamenes = async (pacienteId: string, citaId: string, medicoI
   }
 };
 
-export const fetchExamenPorPaciente = async (pacienteId: string) => {
+export const obtenerHistorialCitas = async (pacienteId: string) => {
   try {
-    const response = await apiOne.get(`/${pacienteId}`);
-    return response.data;
+    const response = await apiOne.get(`/examenes/${pacienteId}`);
+    return response.data; // Devuelve el historial de citas
   } catch (error) {
-    console.error('Error al obtener exámenes:', error);
+    console.error('Error al obtener historial de citas', error);
     throw error;
   }
 };

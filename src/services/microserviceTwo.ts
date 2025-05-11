@@ -1,4 +1,4 @@
-import { apiTwo } from './api';
+import { apiOne, apiTwo } from './api';
 
 //Microservicio Persona
 
